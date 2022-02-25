@@ -1,0 +1,13 @@
+name: noop
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
